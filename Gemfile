@@ -16,7 +16,15 @@ group :doc do
  end
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.2.0'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'better_errors', '~> 2.1.1'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
